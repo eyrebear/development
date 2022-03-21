@@ -1,0 +1,53 @@
+ 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} 
+
+.container > div:nth-child(1n){
+    background-color: blue;
+    grid-column: 1/2;
+    
+}
+
+
+.container > div:nth-child(2n){
+    background-color: red;
+    grid-column: 2/3;
+    
+   
+}
+
+.container > div:nth-child(3n){
+    background-color: yellow;
+    grid-column: 3/4;
+    
+   
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.info > h1:nth-child(1n){
+    background-color: aqua;
+    grid-column: 1/-1
+}
+
+.info > div:nth-child(2n){
+    background-color: lightslategray;
+    grid-column: 1/2
+}
+.info > img:nth-child(3n){
+    
+    size: 45%;
+    grid-column: 2/3;
+}
+
+.info > div:nth-child(4n){
+    background-color: lightcoral;
+    grid-column: 1/2
+}
+
+
