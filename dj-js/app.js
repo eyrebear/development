@@ -1,10 +1,9 @@
-var magicBox = document.getElementById("magic-box")
 var header = document.getElementById("header")
 header.style.fontSize = "50px"
 header.style.textAlign = "center"
 header.style.fontFamily = "brush script mt"
 
-
+var magicBox = document.getElementById("magic-box")
 magicBox.style.alignSelf = "center"
 magicBox.style.backgroundColor = "whitesmoke"
 magicBox.style.border = "4px solid";
@@ -12,6 +11,7 @@ magicBox.style.width = "400px"
 magicBox.style.height = "400px"
 magicBox.style.borderRadius = "20px"
 magicBox.style.textShadow = "5px 2px"
+
 var textBox = document.getElementById("text-box")
 textBox.style.backgroundColor = "whitesmoke"
 textBox.style.border = "2px solid"
@@ -33,7 +33,6 @@ function redFunction(){
 }
 document.getElementById("magic-box").addEventListener("mousedown", redFunction)
 
-
 function yellowFunction(){
     var magicBox = document.getElementById("magic-box")
     magicBox.style.backgroundColor = "yellow"
@@ -54,43 +53,52 @@ function orangeFunction(){
 addEventListener("wheel", orangeFunction)
 
 
-
-
-
-
-
-window.addEventListener("keydown", function(e) {
-    //e.preventDefault()
-    if (e.keyCode === 66){
-        magicBox.style.backgroundColor = "blue"
-    }
-     else if(e.keyCode === 82){
-      magicBox.style.backgroundColor = "red"
-    }
-      else if(e.keyCode === 89){
-        magicBox.style.backgroundColor = "yellow"
-    }
-    else if(e.keyCode=== 71){
+addEventListener("keydown", function(keySelect) {
+    var targetKey = keySelect.key
+    if (targetKey === "b") {
+            magicBox.style.backgroundColor = "blue"
+    }   else if (targetKey === "r") {
+            magicBox.style.backgroundColor = "red"
+    }   else if (targetKey === "y") {
+            magicBox.style.backgroundColor = "yellow"
+    }   else if (targetKey === "g") {
         magicBox.style.backgroundColor = "lime"
-    }
-    else if(e.keyCode === 79){
+    }   else if (targetKey === "o") {
         magicBox.style.backgroundColor = "orange"
     }
- })
-
-//  function eventHandler(e) {
-//     e.preventDefault() 
-//     if (e.target.value == "b") {
+})
+//   function keySelect(keySelect) {
+//     var targetKey = keySelect.key
+//     if (targetKey === "b") {
 //        magicBox.style.backgroundColor = "blue"
-//      } else if (e.target.value == "r"){
+//      } else if (targetKey === "r"){
 //         magicBox.style.backgroundColor = "red"
-//      } else if (e.target.value == "y"){
+//      } else if (targetKey === "y"){
 //         magicBox.style.backgroundColor = "yellow"
-//      } else if (e.target.value == "o"){
-//         magicBox.style.backgroundColor = "orange"
-//      } else if (e.target.value == "g"){
+//      } else if (targetKey === "g"){
 //         magicBox.style.backgroundColor = "lime"
+//      } else if (targetKey === "o"){
+//         magicBox.style.backgroundColor = "orange"
 //      }
 //    }
-//    addEventListener("keydown", eventHandler)
+//     addEventListener("keydown", keySelect)
    
+
+// window.addEventListener("keydown", function(e) {
+//     //e.preventDefault()
+//     if (e.keyCode === 66){
+//         magicBox.style.backgroundColor = "blue"
+//     }
+//      else if(e.keyCode === 82){
+//       magicBox.style.backgroundColor = "red"
+//     }
+//       else if(e.keyCode === 89){
+//         magicBox.style.backgroundColor = "yellow"
+//     }
+//     else if(e.keyCode=== 71){
+//         magicBox.style.backgroundColor = "lime"
+//     }
+//     else if(e.keyCode === 79){
+//         magicBox.style.backgroundColor = "orange"
+//     }
+//  })
