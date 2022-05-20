@@ -1,13 +1,15 @@
-const readline = require("readline-sync")
-//collect user name
-const name = readline.question("What is your name? ")
+// const readline = require("readline-sync")
+// //collect user name
+// const name = readline.question("What is your name? ")
+
+// let gameOver = false;
+// let foundKey = false;
+
+
 //present choices in index and collect selection
 // const choice = ['put hand in hole', 'open the door', 'look for key'],
 // index = readline.keyInSelect(choice, 'What is your move?');
 //console.log('Ok, ' + name + ' goes to your room.');
-
-let gameOver = false;
-let foundKey = false;
 
 //var choice = readline.question("What is your move, " + name + "? Do you want to put hand in hole, open the door, or look for a key?")
 //FUNCTION to reduce redundancy
@@ -48,46 +50,69 @@ let foundKey = false;
 //  }
 
 
- while (gameOver === false) {
-  //list options that continue to populate after answering question and still in game
-   var choice = readline.question("What is your move, " + name + "? Do you want to put hand in hole, open the door, or look for a key?")
-   //escapeGame()
+//  while (gameOver === false) {
+//   //list options that continue to populate after answering question and still in game
+//    var choice = readline.question("What is your move, " + name + "? Do you want to put hand in hole, open the door, or look for a key?")
+//    //escapeGame()
 
-    if (choice === "put hand in hole"){
+//     if (choice === "put hand in hole"){
       
-      console.log("Bummer " + name + ", strange holes are dangerous, and you died!")
-      var playAgain = readline.question("Would you like to play agian, " + name + "? 'Y' or 'N' ")
-      if (playAgain === "N" || playAgain === "n"){
-        gameOver = true;
-        //break;
-      } else {
-        //escapeGame(choice)//
-        //readline.question("What is your move, " + name + "? Do you want to 'put hand in hole', 'open the door', or 'look for a key'?")
-        gameOver = false;
-      }
-    }
+//       console.log("Bummer " + name + ", strange holes are dangerous, and you died!")
+//       var playAgain = readline.question("Would you like to play agian, " + name + "? 'Y' or 'N' ")
+//       if (playAgain === "N" || playAgain === "n"){
+//         gameOver = true;
+//         //break;
+//       } else {
+//         //escapeGame(choice)//
+//         //readline.question("What is your move, " + name + "? Do you want to 'put hand in hole', 'open the door', or 'look for a key'?")
+//         gameOver = false;
+//       }
+//     }
       
      
-    if (choice === "look for a key"){
-      console.log("What's this, " + name + "? You found a key! I wonder if it unlocks something?")
-      foundKey = true;
-    }
-    if (choice === "open the door" && foundKey === false) {
-      console.log("The door is locked " + name + ", you should look for a key")
-    } else if (choice === "open the door" && foundKey === true) {
-      console.log("Congratulations " + name + "! You have escaped the room!")
-      var playAgain = readline.question("Would you like to play agian, " + name + "? 'Y' or 'N' ")
-      //console.log("Would you like to play again " + name + "? Y or N ? ")
-      if (playAgain === "N" || playAgain === "n"){
-        gameOver = true;
-      }  else {
-          gameOver = false;
-          foundKey = false;
-        }
+//     if (choice === "look for a key"){
+//       console.log("What's this, " + name + "? You found a key! I wonder if it unlocks something?")
+//       foundKey = true;
+//     }
+//     if (choice === "open the door" && foundKey === false) {
+//       console.log("The door is locked " + name + ", you should look for a key")
+//     } else if (choice === "open the door" && foundKey === true) {
+//       console.log("Congratulations " + name + "! You have escaped the room!")
+//       var playAgain = readline.question("Would you like to play agian, " + name + "? 'Y' or 'N' ")
+//       //console.log("Would you like to play again " + name + "? Y or N ? ")
+//       if (playAgain === "N" || playAgain === "n"){
+//         gameOver = true;
+//       }  else {
+//           gameOver = false;
+//           foundKey = false;
+//         }
     
-  }
+//   }
+// }
+
+
+
+
+const readline = require("readline-sync");
+
+let findkey = false
+let dead = false
+
+const name  = readline.question("What is your name? ");
+console.log(name + 'You have been trap you have three choose: ')
+
+while (!findkey && !dead) {
+    let options = ['Put hand in the hole', 'look for key', 'open door']
+    const option = readline.keyInSelect(options, 'choose another answer')
+    // console.log(option,'find the key')
+    if (option === 1) {
+        dead = true
+        console.log('roof clapse and kills you')
+    } else if (option === 0) {
+        findkey = true
+        console.log('you have escape')
+        console.log('the end')
+    } else if (option === 3) {
+        console.log('try again')
+    }
 }
-
-
-
-
