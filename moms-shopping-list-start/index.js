@@ -2,10 +2,11 @@ const form = document["addItem"]
 
 
 form.addEventListener("submit", function(e){
-   //prevent default so the text clears after submitting
+   // it takes the data and doesn't do a refresh
     e.preventDefault()
     //navigating to the form element to take in the submitted value
     const newItem = form.title.value
+    //value = "" so the text clears after submitting,
     form.title.value = ""
     //testing that the value was taken
     console.log(newItem)
@@ -16,7 +17,6 @@ form.addEventListener("submit", function(e){
     const divItem = document.createElement("div")
     //don't forget to add text content, or it won't show up!
     divItem.textContent = newItem
-
     listedItem.append(divItem)
     //append and appendChild both seem to work here
     listParent.append(listedItem)

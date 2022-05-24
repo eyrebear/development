@@ -117,17 +117,17 @@ for(i = 0; i < nestArr3.length; i++){
         console.log(nestArr3[i])
     }  
 }
-//#4 I am not understanding why it is not printing in the grid like when it was numbers
+// //#4 I am not understanding why it is not printing in the grid like when it was numbers
 console.log("------------CHANGE LAST TO X'S---------------")
-var nestArr4 = [[0,1,2]]
-for(i = 0; i < nestArr4.length; i++){
-    nestArr3[i] = "x";
-    for(j = 0; j < nestArr4[i].length; j++){
-        nestArr4[j] = "x";
-        console.log(nestArr4[i])
-        //console.log(nestArr3)
-    }  
-}
+// var nestArr4 = [[0,1,2]]
+// for(i = 0; i < nestArr4.length; i++){
+//     nestArr3[i] = "x";
+//     for(j = 0; j < nestArr4[i].length; j++){
+//         nestArr4[j] = "x";
+//         console.log(nestArr4[i])
+//         //console.log(nestArr3)
+//     }  
+// }
 // console.log("TEST")
 // var testArr = [[0, 1, 2],[0, 1, 2],[0, 1, 2]]
 // for(i = 0; i < testArr.length; i++){
@@ -137,3 +137,15 @@ for(i = 0; i < nestArr4.length; i++){
 //         console.log(testArr)
 //     }  
 // }
+
+//console.log("------------ARRAY NESTED LOOP 3---------------")
+console.log("------------CHANGE LAST TO X'S---------------")
+//var nestArr3 = [[0,1,2]]
+var nestArrX = [["x","x","x"]]
+for(i = 0; i < nestArr3.length; i++){
+    nestArr3[i] = nestArrX[i]
+    for(j = 0; j < nestArr3[i].length; j++){ 
+        console.log(nestArr3[i])
+        nestArr3[i] = nestArrX[i]
+    }  
+}
