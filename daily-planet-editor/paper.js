@@ -9,36 +9,35 @@ just fix the existing ones.
 
 // Written by Kent, Clark
 
-var enemies=["Lex","Batman","Darkside","Brainiac","General Zod","Doomsday"];
+const enemies=["Lex","Batman","Darkside","Brainiac","General Zod","Doomsday"]
 
 for (let i = 0; i < enemies.length; i++){
-    var is_there_kryptonite;
+    let isThereKryptonite = false;
     if (i % 2 === 0) {
-        is_there_kryptonite = true;
+        isThereKryptonite = true;
     } else {
-        is_there_kryptonite = false;
+        isThereKryptonite = false;
     }
-    console.log(Who_Wins(is_there_kryptonite,enemies[i]));
+    console.log(Who_Wins(isThereKryptonite,enemies[i]));
 }
 
-function Who_Wins(is_there_kryptonite,enemy_name){
-    if(!is_there_kryptonite) {  
-        return "Superman beats " + enemy_name + ", of course";
+function Who_Wins(isThereKryptonite,enemyEname){
+    if(!isThereKryptonite) {  
+        return "Superman beats " + enemyEname + ", of course";
     }else {
-        return "Depends on how quick Superman can get rid of the Kryptonite. " + enemy_name + " could possibly win this one.";
+        return "Depends on how quick Superman can get rid of the Kryptonite. " + enemyEname + " could possibly win this one.";
     }
 }
-
 function HowAttractedIsLoisLaneToMe (){
     // 1 is not at all attracted, 10 is "super" attracted...
     return Math.floor((Math.random()*10)+1);
 }
 
-console.log("On a scale of 1 - 10, 10 being the highest, Lois' attraction to me is a: ")
+console.log("On a scale of 1 - 10, 10 being the highest, Lois' attraction to me is a: " );
 console.log(HowAttractedIsLoisLaneToMe());
 
-var clarkKent =true;
-var superman = false;
+let clarkKent =true;
+let superman = false;
 
 while (clarkKent){
     console.log("I'm just a nerdy columnist");
