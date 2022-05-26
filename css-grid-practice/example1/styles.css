@@ -1,0 +1,86 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#container-one  {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px
+}
+
+#container-one > div {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    border-radius: 7px;
+    height: 55px;
+}
+
+#container-one > div:nth-child(1) {
+    background-color: lightcoral;
+    grid-column: 1 / 3;
+    /* content: 'header'; */
+}
+
+#container-one > div:nth-child(2) {
+    background-color: dodgerblue;
+    grid-column: 3 / -1;
+}
+
+#container-one > div:nth-child(3) {
+    background-color: rgb(158, 233, 152);
+}
+
+#container-one > div:nth-child(4) {
+    background-color: plum;
+    grid-column: 2 / -1;
+}
+
+#container-one > div:nth-child(5) {
+    background-color: rgba(248, 243, 110, 0.882);
+    grid-column: 1 / -1;
+}
+   
+
+/* @media screen and (min-width: 768px) {
+    #containerOne > div:nth-child(1) {
+        grid-column: 1 / -1;
+     }
+
+    #containerOne > div:nth-child(1)::before {
+       content: 'amrenmiller';
+    }
+    
+} */
+
+
+
+
+/* #containerOne {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(4, 100px);
+}
+
+#containerOne > div {
+border: 2px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-size: 25px;
+}
+
+#containerOne > div:nth-child(even) {
+    background-color: dodgerblue;
+}
+#containerOne > div:nth-child(odd) {
+    background-color: firebrick;
+} */
