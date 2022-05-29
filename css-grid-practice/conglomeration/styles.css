@@ -121,11 +121,11 @@ h1 {
     font-family: auto;
 }
 
-div p {
-    /* background-color: yellow; */
+ div p {
+   /* background-color: yellow; */
     text-align: left;
     margin: 0px;
-}
+} 
 
 #container-three > div {
     /* border: 2px solid black; */
