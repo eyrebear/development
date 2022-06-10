@@ -1,0 +1,68 @@
+body {
+    background-color: whitesmoke;
+}
+
+#addition  {
+    
+    padding-top: 30px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 30px 100px;
+    background-color: rgb(191, 144, 235);
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 30px;   
+    color: rgb(81, 89, 98);
+}
+
+#subtraction {
+
+    padding-top: 30px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: rgb(207, 187, 227);
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 30px;   
+    color: rgb(81, 89, 98);
+}
+
+#multiplication {
+
+    padding-top: 30px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: rgb(174, 152, 197);
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 30px;   
+    color: rgb(81, 89, 98);
+}
+
+.forms {
+    margin-top: 40px;
+}
+
+#add-solution {
+    text-align: center;
+    color: rgb(68, 88, 109);
+}
+
+#sub-solution {
+    text-align: center;
+    color: rgb(68, 88, 109);
+}
+
+#multi-solution {
+    text-align: center;
+    color: rgb(68, 88, 109);
+}

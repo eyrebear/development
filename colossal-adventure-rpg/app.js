@@ -128,7 +128,7 @@ while(player.hp > 0 && currentEnemy.hp > 0){
 
 }
 function run(){
-
+console.log("I'm in the run function")
 let cantEscape = Math.floor(Math.random() * 2)
 
 if(cantEscape === 0){

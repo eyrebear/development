@@ -5,17 +5,17 @@ var submit = document.getElementById("submit");
 //This isn't called anywhere, is it?
 function formAlert() {
     //e.preventDefault();
-    let firstName = form.elements["firstName"].value;
+    let firstName = form.firstName.value;
         form.elements["firstName"].value = "";
-    let lastName = form.elements["lastName"].value;
-        form.elements["lastName"].value = "";
-    let age = form.elements["age"].value;
-        form.elements["age"].value = "";
+    let lastName = form.elements["last-name"].value;
+        form.elements["last-name"].value = "";
+    let age = form.age.value;
+        form.age.value = "";
     const gender = form.elements["gender"].value;
     let location = form.elements["travelLocation"].value;
     let diet = [];
     if (form.vegan.checked) {
-        diet.push(document.getElementById("vegan").value);
+        diet.push(form.vegan.value);
     } if (form.gluten.checked) {
         diet.push(document.getElementById("gluten").value);
     } if (form.paleo.checked) {
