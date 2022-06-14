@@ -38,7 +38,7 @@ const multiFunction = (num1, num2) => {
     div.style.marginBottom = "0px";
     h1.style.marginTop = "10px";
     h1.style.marginBottom = "50px"
-    h1.textContent = (`${num1} - ${num2} = ${multiNums}`);
+    h1.textContent = (`${num1} x ${num2} = ${multiNums}`);
 }
 
 
