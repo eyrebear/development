@@ -1,0 +1,269 @@
+@media only screen and (max-width:770px) {
+    body {
+        background-color: rgba(172, 255, 47, 0.57);
+    }
+
+    #company-name {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        color: red;
+        font-weight: 900;
+        font-size: 40px;
+        background-color: black;
+    }
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .forms {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: nowrap;
+    }
+    
+    #goombas {
+        display: flex;
+        align-content: stretch;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+    #goomba-pic {
+    width:3em;
+    height: 3em;
+    }
+    #bob-ombs {
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+    #cheep-cheeps {
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+
+    #bob-omb-pic {
+    width: 5em;
+    height: 4em;    
+    }
+
+    #cheep-cheep-pic {
+    width: 4em;
+    height: 4em;
+    }
+
+    input[type=number] {
+        border-radius: 8px;
+    }
+
+    #button {
+        background-color: lawngreen;
+        border-radius: 8px;
+        margin-top: 25px;
+        
+    }
+    #totalBox {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #footer {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: flex-start;
+        width: 100%;
+        background-color: rgba(250, 235, 215, 0.389);
+        border-radius: 8px;
+        margin-top: 100px;
+        margin-right: 0px;
+        }
+        .contact {
+            width: 50%;
+            text-align: center;
+        }
+        #address{
+            font-size: x-small;
+        }
+        
+}
+
+
+
+@media only screen and (min-width:770px) {
+
+    body{
+        background-image: url("https://m.media-amazon.com/images/I/71Gn5hPp08L._AC_SX450_.jpg");
+        background-size:contain;
+        margin: 0px;
+    
+    }
+  
+    #company-name {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        color: red;
+        font-weight: 900;
+        font-size: 40px;
+        background-color: black;
+        /* grid-row: 1 / 2; */ 
+    }
+    #container {
+        display: block;
+        box-sizing: border-box;
+        /* grid-template-rows: 4, 1fr; */
+        /* align-content: left; */
+        justify-content: left;
+        /* align-items: left; */
+        margin: 0px 80px;
+    }  
+    .headers {
+        font-size: 30px;
+        padding-right: 10px;
+        color: azure;
+    }
+
+    input[type=number] {
+        border-radius: 8px;
+        width: 65%;
+    }
+
+    .prices {
+        display: grid;
+        grid-column: 2 / 4;
+        font-weight: 600;
+        font-size: x-large;
+        color: red;
+        background-color: rgba(240, 255, 255, 0.914);
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    #goombas {
+    background-image: url("https://ssb.wiki.gallery/images/thumb/e/e0/BigGoomSmallGooms.png/375px-BigGoomSmallGooms.png");
+    background-size: contain;
+    opacity: .8;
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    column-gap: 20px;
+    align-items: center;
+    }
+    
+    #goomba-box {
+        display: grid;
+        grid-row: 2 / 3;
+        grid-column: 2 / -1;
+        /* background-color: aquamarine; */
+
+    }
+
+
+    #goomba-pic {
+        display: grid;
+        grid-row: 2 / -1;
+        width:8em;
+        height: 8em;
+        
+    }
+    
+    #bob-ombs {
+        background-image: url("https://mario.wiki.gallery/images/thumb/6/66/MKT_Icon_Double_Bob-ombs.png/300px-MKT_Icon_Double_Bob-ombs.png");
+        background-size: contain;
+        opacity: .8;
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr); 
+        column-gap: 20px;
+        align-items: center;
+    }
+    #bob-ombs > div {
+        display: grid;
+        grid-row: 2 / 3;
+        grid-column: 2 / -1;
+    }
+
+    #bob-omb-pic {
+        display: grid;
+        grid-row: 2 / -1;
+        width: 10em;
+        height: 8em;
+    }
+
+    #cheep-cheeps {
+        background-image: url("https://mario.wiki.gallery/images/thumb/6/63/CheepCheepNSMBU.png/1200px-CheepCheepNSMBU.png");
+        background-size: contain;
+        opacity: .8;
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr); 
+        column-gap: 20px;
+        align-items: center;
+    }
+    #cheep-cheeps > div {
+        display: grid;
+        grid-row: 2 / 3;
+        grid-column: 2 / -1;
+    }
+
+    #cheep-cheep-pic {
+        display: grid;
+        grid-row: 2 / -1;
+        width: 9em;
+        height: 7em;
+    }
+    #button {
+        width: 100%;   
+        font-size: 20px;
+        border-radius: 8px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        background-color:  limegreen;
+        color: black;
+        
+        /* margin-right: 50px;
+        margin-left: 50px; */
+    }
+    #totalBox {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 60px;
+    }
+    #footer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    background-color: rgba(250, 235, 215, 0.389);
+    border-radius: 8px;
+    margin-top: 50px;
+  
+
+    }
+    .contact {
+        width: 50%;
+        text-align: center;
+    }
+    
+}
