@@ -74,6 +74,12 @@
         border-radius: 8px;
     }
 
+    .button {
+        position: relative;
+        display: grid;
+        margin-bottom: 40px;
+    }
+
     #button {
         background-color: lawngreen;
         border-radius: 8px;
@@ -94,6 +100,8 @@
         border-radius: 8px;
         margin-top: 100px;
         margin-right: 0px;
+        font-size: small;
+
         }
         .contact {
             width: 50%;
@@ -120,7 +128,7 @@
         text-align: center;
         display: inline-block;
         width: 100%;
-        color: red;
+        color: limegreen;
         font-weight: 900;
         font-size: 40px;
         background-color: black;
@@ -172,7 +180,7 @@
     #goomba-box {
         display: grid;
         grid-row: 2 / 3;
-        grid-column: 2 / -1;
+        /* grid-column: 2 / -1; */
         /* background-color: aquamarine; */
 
     }
@@ -198,9 +206,9 @@
         align-items: center;
     }
     #bob-ombs > div {
-        display: grid;
+        /* display: grid; */
         grid-row: 2 / 3;
-        grid-column: 2 / -1;
+        /* grid-column: 2 / -1; */
     }
 
     #bob-omb-pic {
@@ -222,9 +230,9 @@
         align-items: center;
     }
     #cheep-cheeps > div {
-        display: grid;
+        /* display: grid; */
         grid-row: 2 / 3;
-        grid-column: 2 / -1;
+        /* grid-column: 2 / -1; */
     }
 
     #cheep-cheep-pic {
@@ -233,8 +241,17 @@
         width: 9em;
         height: 7em;
     }
+
+    .button {
+        position: relative;
+        display: grid;
+    }
+
     #button {
-        width: 100%;   
+        position: relative;
+        margin: auto;
+        width: 200px;
+        /* width: 100%;    */
         font-size: 20px;
         border-radius: 8px;
         margin-top: 0px;
@@ -258,7 +275,6 @@
     background-color: rgba(250, 235, 215, 0.389);
     border-radius: 8px;
     margin-top: 50px;
-  
 
     }
     .contact {
