@@ -53,7 +53,7 @@ function orangeFunction(){
 addEventListener("wheel", orangeFunction)
 
 
-addEventListener("keydown", function(keySelect) {
+addEventListener("keydown", (keySelect) => {  //keySelect, event, or hamster, it's just a name
     var targetKey = keySelect.key
     if (targetKey === "b") {
             magicBox.style.backgroundColor = "blue"
