@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    /* font-size: 0px; */
+} 
+/* -webkit-transition: all 1s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out; */
+
+body {
+    height: 100vh;
+    padding: 20px;
+    margin: 0px;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    border: 10px solid blueviolet;
+    padding: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px; 
+}
+
+/* .dj-box {
+
+    /* display: inline-block; */
+    /* background-color: rgb(37, 37, 37); */
+    /* border: 4px solid white; */
+    /* height: 100px 
+}*/
+    
+#container > div:nth-child(1) {
+    /* height:280px;
+    width: 280px; */
+    /* margin: auto; */
+    background-color: black;
+    color: black;
+    font-weight: 200;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 1.5s linear, transform 1s ease, color 1s ease-in, content 3s linear;
+}
+
+#container > div:nth-child(1):hover {
+    background-color: rgba(240, 128, 128, 0);
+    transform: skew(20deg,10deg);
+    color: blueviolet;
+    /* content: "Alright, Alright, Alright" */
+    /* margin: auto; */
+}
+
+#container > div:nth-child(2) {
+    background-color: black;
+    transition: background-color 1s linear, border-radius 1s;
+}
+
+#container > div:nth-child(2):hover {
+    background-color: rgb(218, 128, 240);
+    border-radius: 50%;
+}
+
+#container > div:nth-child(3) {
+    background-image: url(https://img.freepik.com/premium-vector/color-rainbow-spiral-black-background_315346-609.jpg?w=740);
+    transition: border 1s, border-image 1s linear;
+    background-position: center;
+    /* background-repeat: repeat; */
+    animation: rainbow-text-simple-animation 5s ease forwards;
+}
+
+#container > div:nth-child(3):hover {
+    /* background-image: url(https://img.freepik.com/premium-vector/color-rainbow-spiral-black-background_315346-609.jpg?w=740); */
+    background-position: center;
+    background-size: 100%;
+    border-style: solid;
+    border-width: 6px;
+    border-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) 1;
+    /* border: 6px solid black; */
+    animation: rainbow-text-simple-animation-rev 1.25s ease forwards;
+}
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+
+#container > div:nth-child(4) {
+    background-image: url(https://i.pinimg.com/564x/e6/90/e8/e690e8eefd7b26b123d81f1391190f9e.jpg);
+    background-position:50%;
+    background-size: stretch;
+    transition: transform 2.5s ease, visibility .5s ease-in;
+    transform: background-size 300% 1s ease;
+}
+
+#container > div:nth-child(4):hover {
+    transform: scale(1.8) rotate(360deg) translate(15%,-15%);
+    /* transition: 300%; */
+}
+
+#container > div:nth-child(5) {
+    background-color: black;
+    transition: transform 1s ease, border-radius 1s, background-color 1s linear;
+}
+
+#container > div:nth-child(5):hover {
+    background-color: lightcoral;
+    /* height: 300px;
+    width: 300px; */
+    /* transform: scale(1); */
+    border-radius: 50%;
+    transform: scaleX(-1);
+    /* border-radius: 50%; */
+}
+
+#container > div:nth-child(6) {
+    background-color: black;
+    transition: border 1s, background-color 1s linear;
+}
+
+#container > div:nth-child(6):hover {
+    background-color: fuchsia;
+    border: 4px dashed yellow
+}

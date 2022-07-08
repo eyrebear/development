@@ -19,3 +19,18 @@ const person = { firstName: "Robert", lastName: "Jones", age: 37 }
 
 
 names.push(person.firstName);
+
+
+//------------------------------------------------
+//lvl 2 mid assessment
+function oneWordOnly(words){
+  let newArr = words.filter(word => {
+    return !word.includes(" ");
+  
+   })
+  return newArr;
+  }
+  
+   console.log(oneWordOnly(["bird", "bird dog", "humming bird", "dog"])) //=>["bird", "dog"]
+   console.log(oneWordOnly(["house", "tiny mansion", "humming bird", "fish", "word"])) //=>["house", "fish", "word"]
+   

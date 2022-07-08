@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <h3 id="greeting">Welcome To Travel Eyre</h3>
+        <form name="travel" id="form">
+            
+            <label class="labels">First and Last Name</label>
+            <input type="text" name="firstName" placeholder="first name" id="first-name">
+            <input type="text" name="lastName" placeholder="last name" id="last-name">
+            <br>
+            <label class="labels">Your Age</label>
+            <input type="number" name ="age" placeholder="age" id="age">
+            <br>
+            <label class="labels">Your Gender</label>
+            <input type="radio" name ="gender" value="Boy"> Boy 
+            <input type="radio" name="gender" value="Girl"> Girl
+            <br>
+            <label class="labels">Your Snack Selection</label>
+            <input type="checkbox" name="snackSelection" value="Annies Bunnies"> Annies Bunnies
+            <input type="checkbox" name="snackSelection" value="Cookies"> Cookies
+            <input type="checkbox" name="snackSelection" value="Peanuts"> Peanuts
+            <br>
+            <label class="labels">Your Drink Selection</label>
+            <input type="checkbox" name="drink-selection" value="White Milk"> White Milk
+            <input type="checkbox" name="drink-selection" value="Chocolate Milk"> Chocolate Milk
+            <input type="checkbox" name="drink-selection" value="Juice Box"> Juice Box
+            <br>
+            <label class="labels">Your Destination</label>
+         <select name="destination">
+                <option value="Arizona">Arizona to Grandma Lisa, Grandpa Dave, and Pamma</option>
+                <option value="Florida">Florida to Yaya</option>
+                <option value="Colorado">Colorado to Grandpa James, Nana, and Fino</option>
+                <option value="China">China</option>
+            </select>   
+
+            <br>
+            <button id="submit-button" type="submit">Submit</button>
+         </form>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,5 @@
+console.log("greetings");
+
 var fruit = ["banana", "apple", "orange", "watermelon"];
 var vegetables = ["carrot", "tomato", "pepper", "lettuce"];
 
@@ -30,5 +32,5 @@ food.reverse()
 console.log("food reversed: ", food)
 //#10 Turn the array into a string and return it. join
 var foodString = food.join()
-console.log("food is now a string, separated by commas as default; ", foodString)
+console.log("food is now a string, separated by commas as default: ", foodString)
 

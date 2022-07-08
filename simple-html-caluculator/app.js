@@ -4,6 +4,7 @@ const multiplyForm = document["multiplication-form"];
 //const submit = document.getElementById("submit")
 const subForm = document["subtraction-form"];
 
+
 const addFunction = (num1, num2) => {
     //e.preventDefault();
    //num1 = addForm.firstNumAdd.value;
@@ -71,7 +72,7 @@ subForm.addEventListener("submit", function(e) {
 
 multiplyForm.addEventListener("submit", function(e) {
     e.preventDefault();
-    const num1 = multiplyForm["firstNumMultiply"].value;
-    const num2 = multiplyForm["secondNumMultiply"].value;
-    multiFunction(num1, num2);
+    // const num1 = multiplyForm["firstNumMultiply"].value;
+    //const num2 = multiplyForm["secondNumMultiply"].value;
+    multiFunction(multiplyForm["firstNumMultiply"].value, multiplyForm["secondNumMultiply"].value);
 })
