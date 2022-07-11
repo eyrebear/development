@@ -1,0 +1,76 @@
+{
+    "menu": [
+        {"appetizers": [
+                {
+                    "type": "appetizer",
+                    "name": "Awesome Blossom",
+                    "description": "A beautiful onion, cut and fried to perfection, and served with our signature smokey sauce.  You haven't had fried onion rings until you've had an Awesome Blossom",
+                    "ingredients": ["onion", "black garlic", "awesome blossom sauce"]
+                },
+                {
+                    "type": "appetizer",
+                    "name": "bag of crisps",
+                    "description": "Your choice of a bag of chips",
+                    "ingredients": ["chips"]
+                }
+            ]
+        },
+        {"hot sandwiches": [
+                {
+                    "type": "hot sandwich",
+                    "name": "BLT",
+                    "description": "Crisp apple wood smoked bacon, fresh crunchy lettuce, juicy tomatoes, enveloped in home-baked fresh sourdough bread, lightly toasted to perfection",
+                    "ingredients": ["bacon", "lettuce", "tomato", "sourdough bread"]
+                },
+                {
+                    "type": "hot sandwich",
+                    "name": "grilled cheese",
+                    "description": "your choice of mozzerella or cheddar (or both!) cheese grilled on sourdough bread until the cheese is ooey gooey.  Served with mustard and a dill spears on the side",
+                    "ingredients": ["cheese", "sourdough bread", "dill pickle", "mustard"]
+                }
+
+        ]},
+        {"cold sandwiches": [
+                {
+                    "type": "cold sandwich",
+                    "name": "Italian sub",
+                    "description": "juicy smoked black forest ham, zesty genoa salami, and spicy pepperoni set the stage for this classic sub, with provalone aged to perfection",
+                    "ingredients": ["ham", "salami", "pepperoni", "cheese", "pepperoncini peppers", "white bread", "mayonnaise", "olive oil", "vinegar"]  
+                },
+                {
+                    "type":"cold sandwich",
+                    "name": "turkey avocado",
+                    "description": "local turkey meat with creamy avocado served on home-baked sourdough. comes with a side of dill pickle spears and apple slices",
+                    "ingredients": ["turkey", "sourdough bread", "avocado", "dill pickle","apple"]
+                }
+        ]},
+        {"desserts": [
+            {
+                "type": "dessert",
+                "name": "spumoni",
+                "description": "in-house gelato with the trio of cherry, chocolate, and pistachio flavors",
+                "ingredients": ["gelato", "pistachio nuts", "cherries"]
+            },
+            {
+                "type": "dessert",
+                "name": "Eiskafee",
+                "description": "This German treat will top you off with a kick. Rich dark coffee poured over sweet vanilla bean ice cream, and topped off with a dollop of whipped cream",
+                "ingredients": ["coffee", "milk", "ice cream", "whipped cream"]
+            }
+        ]},
+        {"drinks": [
+            {
+                "type": "drink",
+                "name": "Traveler's Water",
+                "description": "Why just have bottled water with plastic waste, when you can grab one of our traveler's canteens with your choice from 6 groovy designs?! Every time you come in with it, you can top off from our water carafe, and enjoy a 10% discount on your order!",
+                "ingredients": ["water", "good vibes"]
+            },
+            {
+                "type": "drink",
+                "name": "Lemonade",
+                "description": "This lemonade will take you back to sweet summer evening memories.  Made with fresh-squeezed lemons",
+                "ingredients": ["lemons", "sugar"]
+            }
+        ]}
+    ]
+}
