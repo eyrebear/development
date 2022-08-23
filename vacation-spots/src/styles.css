@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(45, 160, 156);
+
+}
+.list {
+   
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: baseline; */
+    overflow-x: auto;
+}
+
+.card {
+    border: 2px solid blue;
+    width: 300px;
+  text-align: center;
+    background-image:url("https://cdn-thumbs.freeart.com/cherry-blossom-on-defocussed-background_fa28711801.jpg");
+    margin: 30px;
+    border-radius: 20px;
+    background-size: 128%;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+   
+   
+}
