@@ -1,4 +1,4 @@
-export const data = [
+export default [
     {
         id: 1,
         title: "Man must explore, and this is exploration at its greatest",
@@ -26,5 +26,4 @@ export const data = [
     }
 ]
 
-export default data
 
