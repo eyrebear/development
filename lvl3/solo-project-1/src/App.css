@@ -36,16 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-
-
-.display-dice {
-margin: 5px;
-display: inline-block;
-border: solid black;
-height: 50px;
-width: 50px;
-
-
-
-}

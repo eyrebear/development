@@ -27,7 +27,7 @@ todoForm.addEventListener("submit", function(e) {
                 }
                 //post to database
                 axios.post("https://api.vschool.io/fordie/todo", newTodo)
-            .then(response => console.log(response.data))
+            .then(response => console.log(response.data)) //try to add a get here so that it repopulates immediately
             .catch(error => console.log(error))
         })
 //---------------------------------------------------------
@@ -35,13 +35,23 @@ todoForm.addEventListener("submit", function(e) {
 axios.get("https://api.vschool.io/fordie/todo")
     .then(response => {
     console.log(response.data);
+
     for(let i = 0; i < response.data.length; i++) {
         const checkBox = document.createElement("input")
         checkBox.setAttribute("type", "checkbox")
         const h1 = document.createElement("h1")
         const par = document.createElement("p")
         h1.textContent = response.data[i].title
+        const imagePic = document.createElement("img")
+        //not sure how to access image.....url?
+        imagePic.src = response.data[i].imgUrl
+        imagePic.style.maxHeight = "300px"
+        imagePic.style.maxWidth = "300px"
+        imagePic.style.marginTop = "20px"
+        imagePic.style.borderRadius = "10px"
         // h1.style.marginLeft = "30px"
+
+        //if statement to permanetly change the font to strikethrough if the completed is equal to true
         if(response.data[i].completed === true) {
             h1.style.textDecoration = "line-through"
         }
@@ -53,17 +63,24 @@ axios.get("https://api.vschool.io/fordie/todo")
         // h1.append(lineBreak)
         const descriptionText = document.createElement("p")
         descriptionText.style.fontSize = "20px"
+        descriptionText.style.fontWeight = "600"
         descriptionText.style.color = "DarkSlateGrey"
+        descriptionText.style.marginRight = "700px"
+        descriptionText.style.display = "flex"
+        descriptionText.style.flexDirection = "column"
+        descriptionText.style.flexWrap = "nowrap"
+        descriptionText.style.alignItems = "flex-start"
         h1.append(descriptionText)
         descriptionText.textContent = response.data[i].description
-        // checkBox.style.width = "10px"
-        // checkBox.style.height = "10px"
+        descriptionText.appendChild(imagePic)
+      
         //make delete button
         const xButton = document.createElement("button")
         xButton.textContent = "DELETE"
         xButton.style.margin = "10px";
         //append the delete button
         h1.append(xButton)
+
         // non global variable, I think the delete button needs to be here, also because of the forloop
         xButton.addEventListener("click", () => {
             axios.delete(`https://api.vschool.io/fordie/todo/${response.data[i]._id}`)
@@ -71,8 +88,8 @@ axios.get("https://api.vschool.io/fordie/todo")
         .catch(error => console.log(error))
             document.body.removeChild(h1)
             h1.removeChild(xButton)
-
     })
+        //Event listener for checkbox to mark items completed as TRUE in the database. Includes an immediate line-through style (that will later need to be called in an if statement for permanancy)
         checkBox.addEventListener("click", () => {
             const updates = {
                 completed: true
@@ -85,9 +102,11 @@ axios.get("https://api.vschool.io/fordie/todo")
     // }
     }
     
-    //non-global variables, I think the delete button needs to be here
+    
+   
 
 })
+.catch(error => console.log(error))
 //------------------------------------------------------------    
 //delete data in database
 // axios.delete("https://api.vschool.io/fordie/todo/62cc7a8318d1a05bceae5d59")

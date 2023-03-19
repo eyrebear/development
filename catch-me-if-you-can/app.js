@@ -26,7 +26,7 @@ finally {
     console.log("I am running no matter what");
 }
 
-// console.log(addItUp("1",2));
+//console.log(addItUp(1,2));
 
 let user = {
     loginName: "FordEyre",
