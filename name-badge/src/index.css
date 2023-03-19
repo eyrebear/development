@@ -1,0 +1,10 @@
+#navbar {
+  display: flex;
+  justify-content: center;
+  border: solid black;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
