@@ -1,0 +1,36 @@
+#navbar {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#display-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  /* border: 2px solid red; */
+  padding-top:40px;
+}
+
+#box {
+  align-self: center;
+  justify-self: center;
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 4px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#button {
+  width:fit-content
+}
